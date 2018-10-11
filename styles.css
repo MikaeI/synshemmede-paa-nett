@@ -1,0 +1,135 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #ccc;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrap {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top, main, footer {
+  margin: 0 auto;
+  width: 45em;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.top {
+  background-color: white;
+  overflow: hidden;
+}
+
+header, nav {
+  margin: 0.5em;
+}
+
+main, footer {
+  padding: 0.5em;
+}
+
+.bg-top {
+  background-color: #ddd;
+}
+
+.bg-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-footer {
+  background-color: #444;
+}
+
+footer {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #222;
+  color: white;
+}
+
+footer a:link, footer a:visited {
+  color: white;
+}
+
+header a:link, header a:visited {
+  text-decoration: none;
+  font-variant: small-caps;
+  font-size: 1.5em;
+  color: #333;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 0.2em 0.2em 0;
+  float: left;
+  list-style: none;
+  overflow: hidden;
+}
+
+nav a:link, nav a:visited {
+  text-decoration: none;
+  padding: 0.2em;
+  background-color: #c5c5c5;
+  color: black;
+  display: block;
+}
+
+nav a:hover, nav a:focus {
+  background-color: #444;
+  color: white;
+}
+
+.clear-both {
+  clear: both;
+}
+
+main {
+  background-color: #f7f7f7;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+table {
+  border-spacing: 1px;
+  background-color: #666;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 0.2em;
+}
+
+td {
+  border: 1px solid #444;
+  background-color: white;
+}
+
+th {
+  border: 1px solid #888;
+  background-color: #222;
+  color: white;
+  font-weight: normal;
+}
+
+.float-left {
+  float: left;
+  margin: 0.2em 0.2em 0.2em 0;
+}
+
+.float-right {
+  float: right;
+  margin: 0.2em 0 0.2em 0.2em;
+}
+
