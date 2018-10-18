@@ -26,7 +26,7 @@ html, body {
   overflow: hidden;
   border-width: 0 1px;
   border-style: solid;
-  border-color: #919191;
+  border-color: #E17308;
 }
 
 header, nav {
@@ -49,17 +49,17 @@ main, footer {
 }
 
 .bg-footer {
-  background-color: #444;
+  background-color: #7A5D19;
 }
 
 footer {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  background-color: #222;
+  background-color: #675316;
   color: white;
   border-width: 0 1px;
   border-style: solid;
-  border-color: #777777;
+  border-color: #F78F0E;
 }
 
 footer a:link, footer a:visited {
@@ -70,7 +70,7 @@ header a:link, header a:visited {
   text-decoration: none;
   font-variant: small-caps;
   font-size: 1.5em;
-  color: #333;
+  color: #6D5917;
 }
 
 nav ul {
@@ -88,14 +88,14 @@ nav ul li {
 nav a:link, nav a:visited {
   text-decoration: none;
   padding: 0.2em;
-  border: 1px solid #929292;
-  background-color: #c5c5c5;
+  border: 1px solid #E17308;
+  background-color: #FEB649;
   color: black;
   display: block;
 }
 
 nav a:hover, nav a:focus {
-  background-color: #444;
+  background-color: #7A5D19;
   border: 1px solid black;
   color: white;
 }
@@ -105,17 +105,17 @@ nav a:hover, nav a:focus {
 }
 
 main {
-  background-color: #f7f7f7;
+  background-color: #FFFEDE;
   overflow: hidden;
   flex-grow: 1;
   border-width: 0 1px;
   border-style: solid;
-  border-color: #888;
+  border-color: #DD6F07;
 }
 
 table {
   border-spacing: 1px;
-  background-color: #666;
+  background-color: #BB620C;
   border-collapse: collapse;
 }
 
@@ -124,13 +124,13 @@ td, th {
 }
 
 td {
-  border: 1px solid #444;
+  border: 1px solid #7A5D19;
   background-color: white;
 }
 
 th {
-  border: 1px solid #888;
-  background-color: #222;
+  border: 1px solid #E6780B;
+  background-color: #675316;
   color: white;
   font-weight: normal;
 }
@@ -143,5 +143,9 @@ th {
 .float-right {
   float: right;
   margin: 0.2em 0 0.2em 0.2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #C1630B;
 }
 
