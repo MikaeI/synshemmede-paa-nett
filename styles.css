@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
 body {
-  font-family: sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 20px;
   margin: 0;
 }
@@ -146,6 +149,6 @@ th {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto Slab, serif;
   color: #C1630B;
 }
-
