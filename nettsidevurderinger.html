@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>
-      Nettsidevurderinger
+      Synshemmede på nett
     </title>
     <meta http-equiv="X-UA-Compatible"
-          content="IE=edge"> 
+          content="IE=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet"
@@ -14,62 +14,143 @@
   </head>
   <body>
     <div class="wrap">
-
       <div class="bg-top">
         <div class="top">
           <header>
             <a href="index.html">
-              Synshemmede på nett
+              Synshemmede på nett 🔍
             </a>
           </header>
           <nav>
             <ul>
-
               <li>
                 <a href="index.html">Forside</a>
               </li>
-
               <li>
                 <a href="om-siden.html">Om siden</a>
               </li>
-
               <li>
                 <a href="tips-til-nettsider.html">Tips til nettsider</a>
               </li>
-
               <li>
-                <a href="nettsidevurderinger.html">Nettsidevurderinger</a>
+                <a href="#" class="current">Nettsidevurderinger</a>
               </li>
               <div class="clear-both"></div>
-
             </ul>
-
           </nav>
         </div>
       </div>
-
       <div class="bg-main">
         <main>
           <article>
-
-	    <h1>
-              Nettsidevurderinger
-	    </h1>
-
-            <p>Dette er en side vi eventuelt vil fylle ut.</p>
-
+            <h1>
+              Kriterier for testing
+            </h1>
+            <table>
+              <thead>
+                <th>
+                  Kriterium
+                </th>
+                <th>
+                  Metode for testing
+                </th>
+              </thead>
+              <tr>
+                <td>
+                  Sjekk at innholdet er likt selv om man bruker et annet stilark for å presentere informasjonen (WCAG 2 SC 1.3.1, 1.4.12).
+                  <ul>
+                    <li>
+                      Avstand mellom linjer er minst 1.5 ganger skriftstørrelse
+                    </li>
+                    <li>
+                      Avstand mellom paragrafer er minst 2 ganger skriftstørrelse
+                    </li>
+                    <li>
+                      Avstand mellom bokstaver er minst 0.12 ganger skriftstørrelse
+                    </li>
+                    <li>
+                      Avstand mellom ord er minst 0.16 ganger skriftstørrelse
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  Manuell testing vha. plugin for nettleser som tillater overstyring av CSS ("reset"-stilark).
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Instruksjoner må ikke utelukkende være avhengige av form, størrelse, visuell plassering, orientering eller lyd for å kunne bli forstått (WCAG 2 SC 1.3.3).
+                </td>
+                <td>
+                  Manuell (visuell) sjekk.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Sjekk at informasjon ikke utelukkende blir formidlet gjennom fargebruk (WCAG 2 SC 1.4.1).
+                </td>
+                <td>
+                  Manuell (visuell) sjekk.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Sjekk at det er tilstrekkelig kontrast mellom ulike elementer i grensesnittet (WCAG 2 SC 1.4.3, WCAG 2 SC 1.4.6, WCAG 2.1 SC 1.4.11). Vi noterer hvilke krav som er oppfylt med kontrasten.
+                  <ul>
+                    <li>
+                      WCAG 2 SC 1.4.3: kontrast 4.5:1 mellom bakgrunn og vanlig tekst
+                    </li>
+                    <li>
+                      WCAG 2 SC 1.4.3: kontrast 3:1 mellom bakgrunn og stor tekst (for eksempel titler)
+                    </li>
+                    <li>
+                      WCAG 2 SC 1.4.6: kontrast 7:1 mellom bakgrunn og tekst
+                    </li>
+                    <li>
+                      WCAG 2 SC 1.4.6: kontrast 4.5:1 mellom bakgrunn og stor tekst (for eksempel titler)
+                    </li>
+                    <li>
+                      WCAG 2.1 SC 1.4.11: kontrast 3:1 mellom ulike deler av grensesnittet.
+                    </li>
+                </td>
+                <td>
+                  Bruke utviklerverktøy ("inspiser element") i Chrome (automatisk beregning av kontrast pr. element).
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Sjekk at innholdet kan bli forstørret til 200% uten at man mister innhold eller funksjonalitet (WCAG 2 SC 1.4.4).
+                </td>
+                <td>
+                  Zoome inn og sammenligne.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Sjekk at lenketekster er beskrivende (ikke f.eks. "klikk her") (WCAG 2 SC 2.4.4).
+                </td>
+                <td>
+                  Manuell (visuell) sjekk.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Sjekk at klikkbare elementer har størrelse på minst 44x44 CSS-piksler (WCAG 2.1 SC 2.5.5).
+                </td>
+                <td>
+                  Bruke utviklerverktøy ("inspiser element") for å se beregnede dimensjoner pr. element. Telle med "padding" og "border" (ikke "margin").
+                </td>
+              </tr>
+            </table>
           </article>
         </main>
       </div>
-
       <div class="bg-footer">
         <footer>
-          Nettsiden er laget som del av et prosjekt i førsteåret av datateknikkstudiet ved UiT.<br>
+          Nettsiden er laget som del av et prosjekt i førsteåret av datateknikkstudiet ved UiT.<br />
           For mer informasjon, se <a href="om-siden.html">Om siden</a>.
         </footer>
       </div>
-
     </div>
   </body>
 </html>
-
