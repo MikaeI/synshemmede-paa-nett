@@ -117,7 +117,6 @@ main {
 }
 table {
   border-spacing: 1px;
-  background-color: #BB620C;
   border-collapse: collapse;
   text-align: left;
   min-width: 512px;
@@ -142,6 +141,9 @@ td {
 td ul {
   margin-bottom: 0;
 }
+tr:nth-child(even) td {
+  background-color: #eff5f5;
+}
 th {
   border: 2px solid #3ab;
   background-color: #3ab;
@@ -162,4 +164,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Roboto Slab, serif;
   color: #C1630B;
   line-height: 1.25em;
+}
+h2 {
+  font-size: 1em;
 }
