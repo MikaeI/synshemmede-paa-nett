@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pugging av hurtigtaster for nettlesing med NVDA</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="./styles.css" />
+    <script type="text/javascript"
+            src="./pugg.js">
+    </script>
+    <script type="text/javascript"
+            src="./cards.js">
+    </script>
+    <script type="text/javascript">
+      var pugg;
+      window.onload = function() {
+        var el = document.getElementById("pugg");
+        pugg = new Pugg(el, cards);
+      };
+    </script>
+  </head>
+  <body>
+    <div id="pugg"></div>
+  </body>
+</html>
+
