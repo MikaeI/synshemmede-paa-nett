@@ -168,3 +168,25 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   font-size: 1em;
 }
+
+/* Skip links (WCAG 2 SC 2.4.1)
+ * Method based on https://www.jimthatcher.com/skipnav.htm, which was
+ * linked to from https://www.w3.org/WAI/WCAG21/Techniques/general/G1,
+ * with code originally from the website of the US Department of Veterans
+ * Affairs. */
+.skip-to-main a {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-to-main a:focus, .skip-to-main a:active {
+  left: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  text-decoration: underline;
+  background-color: white;
+}
+
