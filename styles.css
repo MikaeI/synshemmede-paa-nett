@@ -168,6 +168,12 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   font-size: 1em;
 }
+.references dt {
+  font-weight: bold;
+}
+.references dd {
+  margin-bottom: 1em;
+}
 
 /* Skip links (WCAG 2 SC 2.4.1)
  * Method based on https://www.jimthatcher.com/skipnav.htm, which was
