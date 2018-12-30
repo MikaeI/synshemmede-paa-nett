@@ -110,7 +110,7 @@ nav a.current {
 }
 main {
   background-color: white;
-  overflow: scroll;
+  overflow: hidden;
   flex-grow: 1;
   font-size: 1em;
   line-height: 1.5em;
